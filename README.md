@@ -1,4 +1,4 @@
-# Timeseries Metrics
+# Time Series Metrics
 
 ![PyPI Downloads](https://static.pepy.tech/badge/timeseriesmetrics)
 
