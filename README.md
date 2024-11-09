@@ -1,5 +1,7 @@
 # Timeseries Metrics
 
+![PyPI Downloads](https://static.pepy.tech/badge/timeseriesmetrics)
+
 This package provides several metrics used to evaluate the performance of predictive models in time series.
 
 ## Installation
