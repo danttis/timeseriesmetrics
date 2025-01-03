@@ -21,7 +21,7 @@ jobs:
                 pip install poetry
           
             - name: Build binary wheel and a source tarball
-              run: python -m poetry bluid
+              run: python -m poetry build
                
             - name: Publish distribution to PyPI
               uses: pypa/gh-action-pypi-publish@master
