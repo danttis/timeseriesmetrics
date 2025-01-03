@@ -18,10 +18,11 @@ jobs:
             - name: Install dependencies
               run: |
                 python -m pip install --upgrade pip
-                pip install poetry
+                pip install poetry twine
           
             - name: Build binary wheel and a source tarball
               run: python -m poetry build
+                   twine upload dist/timeseriesmetrics-0.1.9.tar.gz dist/timeseriesmetrics-0.1.9-py3-none-any.whl
                
             - name: Publish distribution to PyPI
               uses: pypa/gh-action-pypi-publish@v1
