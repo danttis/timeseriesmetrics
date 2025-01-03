@@ -64,7 +64,7 @@ def mape(y_true, y_pred):
         percentage_errors = np.abs((y_true - y_pred) / y_true)
         percentage_errors = np.where(np.isfinite(percentage_errors), percentage_errors, np.nan)
     
-    return np.nanmean(percentage_errors) * 100
+    return np.nanmean(percentage_errors)
 
 
 def arv(y_true, y_pred):
