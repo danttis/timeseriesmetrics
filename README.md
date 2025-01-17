@@ -17,12 +17,12 @@ pip install timeseriesmetrics
 The package can be used as follows:
 
 ```python
-from timeseriesmetrics import *
+from timeseriesmetrics import Metrics 
 
 y_true = [1, 2, 3, 4, 5]
 y_pred = [3, 4, 3, 4, 5]
 
-theil(y_true, y_pred)
+Metrics.theil(y_true, y_pred)
 ```
 
 Where `y_true` represents the real values ​​and `y_pred` the predicted values.
@@ -40,29 +40,29 @@ Where `y_true` represents the real values ​​and `y_pred` the predicted value
 
 MAPE (Mean Absolute Percentage Error) measures the accuracy of the model, presenting a relative value:
 
-![](./imgs/mape.png)
+![](https://raw.githubusercontent.com/danttis/timeseriesmetrics/refs/heads/main/imgs/mape.png)
 
 ### ARV
 
 ARV (Average Relative Variance) compares the predictor's performance with the simple average of past values ​​in the series:
 
-![](./imgs/arv.png)
+![](https://raw.githubusercontent.com/danttis/timeseriesmetrics/refs/heads/main/imgs/arv.png)
 
 ### ID
 
 ID (Index of Disagreement) disregards the unit of measurement, presenting values ​​in the interval [0, 1]:
 
-![](./imgs/id.png)
+![](https://raw.githubusercontent.com/danttis/timeseriesmetrics/refs/heads/main/imgs/id.png)
 
 ### Theil'U 
 Theil'U compares prediction performance to the Random Walk model (in which $ u_{t} $ is inferred by $ u_{t-1} $), where `Theil< 1` indicates a better prediction than the Random Walk model:
 
-![](./imgs/theil.png)
+![](https://raw.githubusercontent.com/danttis/timeseriesmetrics/refs/heads/main/imgs/theil.png)
 
 ### WPOCID 
 WPOCID measures how well the model predicts the trend of the target time series: 
 
-![](./imgs/wpocid.png)
+![](https://raw.githubusercontent.com/danttis/timeseriesmetrics/refs/heads/main/imgs/wpocid.png)
 
 ## References
 
